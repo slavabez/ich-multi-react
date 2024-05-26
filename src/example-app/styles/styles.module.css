@@ -1,0 +1,12 @@
+.App {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 16px;
+    padding: 16px;
+    font-family: sans-serif;
+}
