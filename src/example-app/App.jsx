@@ -3,13 +3,11 @@ import ExampleComponent from "./components/ExampleComponent";
 
 import styles from "./styles/styles.module.css";
 
-console.log(styles);
-
 function App() {
   return (
     <div className={styles.App}>
       <h1>Приложение-пример</h1>
-      <ExampleComponent testProp={"Hello world"} />
+      <ExampleComponent testProp="Hello world" />
     </div>
   );
 }

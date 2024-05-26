@@ -14,8 +14,8 @@ import ExampleApp from "./example-app/App";
 import SimpleUseState from "./use-state-examples/SimpleUseState";
 
 // Импортируйте любой компонент и отрисовывайте его внутри функции return
-function App() {
+function MainApp() {
   return <ExampleApp />;
 }
 
-export default App;
+export default MainApp;
