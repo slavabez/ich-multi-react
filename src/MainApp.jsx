@@ -13,9 +13,11 @@ import ExampleApp from "./example-app/App";
 // Пример использования простого хука useState
 import SimpleUseState from "./use-state-examples/SimpleUseState";
 
+import Practicum2 from "./practicum-2/App";
+
 // Импортируйте любой компонент и отрисовывайте его внутри функции return
 function MainApp() {
-  return <ExampleApp />;
+  return <Practicum2 />;
 }
 
 export default MainApp;

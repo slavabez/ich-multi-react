@@ -3,3 +3,10 @@
     1) Добавьте обводку (border) с округленными углами (border-radius)
     2) Задайте цвет фона карточки (background-color)
  */
+
+ .TeamCard {
+    border: 2px solid purple;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: violet;
+ }

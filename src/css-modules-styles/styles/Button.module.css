@@ -1,7 +1,12 @@
 .Button {
     background-color: blue;
+    color: white;
 }
 
 .Button:hover {
     background-color: lightblue;
+}
+
+.paragraph {
+    color: purple;
 }

@@ -8,7 +8,12 @@ import "../styles/TeamCard.css";
     Связка стилей - через CSS class TeamCard, не забудьте добавить его
  */
 function TeamCard(props) {
-  return <div></div>;
+  return <div className="TeamCard">
+    <h3>{props.name}</h3>
+    <ul>
+      {props.members.map((member) => <li key={member}>{member}</li>)}
+    </ul>
+  </div>;
 }
 
 export default TeamCard;

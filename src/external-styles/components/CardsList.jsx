@@ -13,7 +13,9 @@ import "../styles/CardsList.css";
     Связка стилей - через CSS class CardsList, не забудьте добавить его
  */
 function CardsList(props) {
-  return <div></div>;
+  return <div className="CardsList">
+    {props.teams.map((team) => <TeamCard key={team.name} name={team.name} members={team.members} />)}
+  </div>;
 }
 
 export default CardsList;

@@ -7,7 +7,10 @@ import React from "react";
 function App() {
   return (
     <div>
-      <p>
+      <p style={{
+        border: '2px solid purple',
+        backgroundColor: 'pink'
+      }}>
         Я текст, который был стилизован с помощью встроенных стилей (inline
         styles)
       </p>

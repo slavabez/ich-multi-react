@@ -1,25 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
-// ! Нерабочий пример !
 function SimpleUseState() {
-  // Посмотрим, когда и сколько раз будет вызываться этот код
-  console.log("Вызов нашего компонента SimpleUseState");
+  const [count, setCount] = useState(0);
 
-  let numberOfClicks = 0;
-
-  function incrementNumberOfClicks() {
-    // Прибавляем 1
-    numberOfClicks += 1;
-    // Посмотрим что у нас теперь хранится в нашей переменной
-    console.log(numberOfClicks);
+  function increment(){
+    setCount(count + 1);
   }
 
-  return (
-    <div>
-      <p>Number of clicks: {numberOfClicks}</p>
-      <button onClick={incrementNumberOfClicks}>+1</button>
-    </div>
-  );
+  function decrement(){
+    setCount(count - 1);
+  }
+
+  function setZero(){
+    setCount(0);
+  }
+
+  return <div>
+    <p>Count: {count}</p>
+    <button onClick={decrement}>-1</button>
+    <button onClick={setZero}>0</button>
+    <button onClick={increment}>+1</button>
+  </div>
+
 }
 
 export default SimpleUseState;

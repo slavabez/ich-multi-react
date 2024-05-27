@@ -59,6 +59,7 @@ function App() {
   return (
     <div>
       <h1>Внешние стили</h1>
+      <CardsList teams={teams} />
     </div>
   );
 }
